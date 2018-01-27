@@ -1,0 +1,14 @@
+module Meady
+{
+    imports {Base,}
+
+    item MeadMagazine
+    {
+	    Weight	        =	0.1,
+	    Type	        =	Literature,
+	    DisplayName	    =	Mead maker magazine,
+	    Icon	        =	Meady_01MeadMagazine,
+	    TeachedRecipes  =   Make Mead; Make Yeast; Make Honey,
+	    ReplaceOnUse    =   MeadMagazine,
+    }
+}

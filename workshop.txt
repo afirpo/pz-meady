@@ -1,0 +1,9 @@
+version=1
+id=1283601237
+title=Meady Mod
+description=Mead production & related stuff
+description=This is a WIP and quite OP mod that lets you produce Honey (from Comb), Yeast (from Grapes) and Mead (from Honey and Yeast).
+description=Recipes are very simple, and now Comb can be foraged from the wilderness.
+description=I took inspiration from the "Home Pub Mod".
+tags=
+visibility=public

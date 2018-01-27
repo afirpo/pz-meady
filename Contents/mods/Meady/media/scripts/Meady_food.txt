@@ -1,0 +1,26 @@
+module Meady
+{
+    imports {Base,}
+
+    item MeadBottle
+    {
+	    Weight              =	0.3,
+	    HungerChange    	=	-5,
+        ThirstChange    	=	-40,
+        UnhappyChange   	=	-40,
+	    Type            	=	Food,
+        Alcoholic	        =	true,
+        AlcoholPower        =   1,
+	    DisplayName       	=	Mead Bottle,
+	    Icon            	=	Meady_02MeadBottle,
+	    ReplaceOnUse    	=   WaterBottleEmpty,
+	    CustomContextMenu   =   Drink,
+		CustomEatSound      =   PZ_DrinkingFromBottle,
+        Carbohydrates       =   22,
+        Proteins            =   2,
+        Lipids              =   0,
+        Calories            =   213,
+        CantBeFrozen 		=   true,
+        Packaged            =   true,
+    }
+}

@@ -1,0 +1,45 @@
+module Meady
+{
+	imports {Base,}
+
+	recipe Make Yeast
+	{
+		keep Bowl,
+		Grapes,
+		Result			: 	Yeast,
+		OnGiveXP		:	Give1CookingXP,
+		SkillRequired	:	Cooking=0,
+		NeedToBeLearn	:	true,
+		Time			:	80.0,
+		Category		:	Cooking,
+	}
+
+	recipe Make Honey
+	{
+		EmptyJar,
+		JarLid,
+		Comb,
+		Cigarettes	=	5,
+		Result			: 	Honey,
+		OnGiveXP		:	Give1CookingXP,
+		SkillRequired	:	Cooking=0,
+		NeedToBeLearn	:	true,
+		Time			:	80.0,
+		Category		:	Cooking,
+	}
+
+	recipe Make Mead
+	{
+		keep Spoon,
+		WaterBottleEmpty,
+		Yeast,
+		Honey,
+		Water	=	4,           
+		Result			:	MeadBottle,
+		OnGiveXP		:	Give2CookingXP,
+		SkillRequired	:	Cooking=0,
+		NeedToBeLearn	:	true,
+		Time			:	100.0,
+		Category		:	Cooking,
+	} 
+}
