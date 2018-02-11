@@ -8,7 +8,7 @@ module Meady
 		Grapes,
 		Result			: 	Yeast,
 		OnGiveXP		:	Give1CookingXP,
-		SkillRequired	:	Cooking=0,
+		SkillRequired	:	Cooking=1,
 		NeedToBeLearn	:	true,
 		Time			:	80.0,
 		Category		:	Cooking,
@@ -16,13 +16,12 @@ module Meady
 
 	recipe Make Honey
 	{
-		EmptyJar,
-		JarLid,
+		WaterBottleEmpty,
 		Comb,
 		Cigarettes	=	5,
 		Result			: 	Honey,
 		OnGiveXP		:	Give1CookingXP,
-		SkillRequired	:	Cooking=0,
+		SkillRequired	:	Cooking=2,
 		NeedToBeLearn	:	true,
 		Time			:	80.0,
 		Category		:	Cooking,
@@ -37,9 +36,24 @@ module Meady
 		Water	=	4,           
 		Result			:	MeadBottle,
 		OnGiveXP		:	Give2CookingXP,
-		SkillRequired	:	Cooking=0,
+		SkillRequired	:	Cooking=1,
 		NeedToBeLearn	:	true,
 		Time			:	100.0,
 		Category		:	Cooking,
 	} 
+
+	recipe Make Strawberry Melomel 
+	{
+		keep Spoon,
+		WaterBottleEmpty,
+		Yeast,
+		Honey,
+		Strewberrie : 3,
+		Result			:	MelomelBottle,
+		OnGiveXP		:	Give3CookingXP,
+		SkillRequired	:	Cooking=1,
+		NeedToBeLearn	:	true,
+		Time			:	100.0,
+		Category		:	Cooking,
+	}
 }

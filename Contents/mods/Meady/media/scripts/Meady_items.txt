@@ -8,7 +8,7 @@ module Meady
 	    Type	        =	Literature,
 	    DisplayName	    =	Mead maker magazine,
 	    Icon	        =	Meady_01MeadMagazine,
-	    TeachedRecipes  =   Make Mead; Make Yeast; Make Honey,
+	    TeachedRecipes  =   Make Mead; Make Yeast; Make Honey; Make Strawberry Melomel,
 	    ReplaceOnUse    =   MeadMagazine,
     }
 }
